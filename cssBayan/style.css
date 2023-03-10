@@ -9,11 +9,15 @@ button {
     padding: 0;
     margin: 0;
 }
+label {
+    cursor: pointer;
+}
 
 /* class */
 .container {
     max-width: 40em;
     margin: 0 auto;
+    padding: 0 1em;
 }
 .main__mem-content {
     border-top: 1px solid #000;
@@ -23,6 +27,7 @@ button {
 .main__mem-error-img {
     width: 80%;
     height: 100%;
+    cursor: pointer;
 }
 .main__cross {
     width: 2em;
@@ -47,7 +52,7 @@ button {
 .main__mem-content:hover .main__mem-error, 
 .input-check:checked ~ .main__mem-error{
     height: 20em;
-    margin-bottom: 1.5em;
+    margin: 1em 0;
 }
 .input-check:checked ~ .main__mem-title .main__cross{
     transform: rotate(0deg);
