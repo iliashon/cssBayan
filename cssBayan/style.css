@@ -1,0 +1,56 @@
+/* reset */
+body {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1rem;
+    margin: 0;
+}
+button {
+    border: 0;
+    background-color: #fff;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* class */
+.container {
+    max-width: 40em;
+    margin: 0 auto;
+}
+.main__mem-python {
+    border-top: 1px solid #000;
+}
+.main__mem-python-block{
+    text-align: center;
+    height: 0em;
+    transition: 0.3s;
+}
+
+.main__mem-python-img {
+    width: 80%;
+    height: 100%;
+}
+.main__mem-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main__cross-btn-svg {
+    max-width: 2em;
+    transform: rotate(45deg);
+    cursor: pointer;
+    transition: 0.3s;
+}
+.main__mem-python:hover .main__mem-python-block {
+    height: 20em;
+}
+.main__mem-python:hover .main__cross-btn-svg {
+    transform: rotate(0deg);
+}
+/* .main__cross-btn-svg:active .main__mem-python-block {
+    height: 20em;
+} */
+
+
+
+/* id */
