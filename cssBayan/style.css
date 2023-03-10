@@ -11,46 +11,56 @@ button {
     margin: 0;
 }
 
-
 /* class */
 .container {
     max-width: 40em;
     margin: 0 auto;
 }
-.main__mem-python {
+.main__mem-content {
     border-top: 1px solid #000;
-}
-.main__mem-python-block{
     text-align: center;
-    height: 0em;
-    transition: 0.3s;
+    color: blue;
 }
-
-.main__mem-python-img {
+.main__mem-error-img {
     width: 80%;
     height: 100%;
 }
-.main__mem-info {
+.main__cross {
+    width: 2em;
+    height: 2em;
+    transform: rotate(45deg);
+    display: none;
+}
+.main__mem-error {
+    display: block;
+    height: 0em;
+    transition: 0.5s;
+}
+.main__mem-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.main__cross-btn-svg {
-    max-width: 2em;
-    transform: rotate(45deg);
-    cursor: pointer;
-    transition: 0.3s;
-}
-.main__mem-python:hover .main__mem-python-block {
+.main__mem-content:hover .main__mem-error {
     height: 20em;
 }
-.main__mem-python:hover .main__cross-btn-svg {
+.input-check:checked ~ .main__mem-error{
+    height: 20em;
+}
+.input-check:checked ~ .main__mem-title .main__cross{
     transform: rotate(0deg);
 }
-/* .main__cross-btn-svg:active .main__mem-python-block {
-    height: 20em;
-} */
+.input-check:checked ~ .main__mem-title{
+    color: #000;
+}
+.container:hover .main__cross {
+    display: block;
+}
+.container:hover .main__mem-title {
+    color: #000;
+}
+.main__mem-content:hover .main__cross {
+    transform: rotate(0deg);
+}
 
 
-
-/* id */
