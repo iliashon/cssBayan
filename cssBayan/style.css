@@ -1,7 +1,6 @@
 /* reset */
 body {
     font-family: 'Oswald', sans-serif;
-    font-size: 1rem;
     margin: 0;
 }
 button {
@@ -30,6 +29,10 @@ button {
     height: 2em;
     transform: rotate(45deg);
     display: none;
+    transition: 0.5s;
+}
+.main__mem-title span {
+    font-size: 1.5em;
 }
 .main__mem-error {
     display: block;
@@ -41,11 +44,10 @@ button {
     justify-content: space-between;
     align-items: center;
 }
-.main__mem-content:hover .main__mem-error {
-    height: 20em;
-}
+.main__mem-content:hover .main__mem-error, 
 .input-check:checked ~ .main__mem-error{
     height: 20em;
+    margin-bottom: 1.5em;
 }
 .input-check:checked ~ .main__mem-title .main__cross{
     transform: rotate(0deg);
